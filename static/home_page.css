@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+ --fontsize: 22px;
+ --fontfamily: Bahnschrift Light;
+ font-family: var(--fontfamily);
+ --background: rgb(26, 25, 25);
+ --bkgTrans:  rgba(26, 25, 25, 0.575);
+}
+
+body{
+  background: var(--background);
+}
+
+.header-showcase{
+  transition: 1s;
+  width: 100vw;
+  height: 60vh;
+  background-image: url(./images/james-adams-DC9z-Xau6j0-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  border-bottom: 1px solid orangered;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+}
+
+#nav-bar{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--bkgTrans);
+  border-bottom: 5px groove orangered;
+  /* box-shadow: 2px 2px 20px 2px orangered; */
+}
+
+#nav-bar h1{
+  font-size: 2rem;
+  color: white;
+}
+
+#navigations{
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  list-style: none;
+}
+
+#navigations a{
+  text-decoration: none;
+  color: white;
+  font-size: var(--fontsize);
+}
+
+#navigations a:hover{
+  color: grey;
+}
+
+#showcase-btn-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 300px;
+}
+
+.showcase-btn{
+  width: 99px;
+  height: 99px;
+  border-radius: 50%;
+  font-size: 70px;
+  color: orangered;
+  background-color: var(--bkgTrans);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.showcase-btn:hover{
+  box-shadow: 2px 2px 20px 2px black;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+}
+
+.news-post{
+  width: 70vw;
+  margin: auto;
+}
+
+#news-img{
+  width: 80%;
+  height: 400px;
+  background-image: url(images/austin-distel-Hg3BHX6U5jg-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.paragraph{
+  text-align: justify;
+  color: rgb(192, 189, 189);
+  padding: 10px;
+  margin: auto;
+  width: 80%;
+}

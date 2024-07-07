@@ -1,0 +1,54 @@
+*{
+ margin: 0;
+ padding: 0;
+ border: 0;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before{
+ content: '';
+ background-image: url(./images/nattu-adnan-Ai2TRdvI6gM-unsplash.jpg);
+ opacity: 0.3;
+ width: 100vw;
+ height: 100vh;
+ position: absolute;
+ background-position: center;
+ background-size: cover;
+}
+
+#form{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#form input{
+    margin: 10px;
+    padding: 10px;
+    outline-color: orange;
+}
+
+#form .field{
+    background-color: rgba(255, 255, 255, 0.555);
+    border: 1px solid rgb(128, 128, 128);
+}
+
+#btn{
+    background-color: orange;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid orange;
+    border-radius: 3px;
+}
+
+#btn:hover{
+    color: grey;
+}
