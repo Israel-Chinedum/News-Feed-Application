@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="registration_page.css">
+    <link rel="stylesheet" href="Font-Awesome-6.5.2/Font-Awesome-6.5.2/css/all.css">
 </head>
 <body>
+
+   <p id="message">this is supposed to be a message</p>
+
     <form action="/register" method="post" id="form">
         <input class="field" type="text" name="FirstName" placeholder="Enter FirstName">
         <input class="field" type="text" name="LastName" placeholder="Enter LastName">
         <input class="field" type="text" name="Department" placeholder="Enter Department">
-        <input class="field" type="text" name="Matric" placeholder="Enter Matric Number">
+        <input class="field" type="number" name="Matric" placeholder="Enter Matric Number">
+        <input class="field" type="number" name="PhoneNumber" placeholder="Enter Phone Number">
         <input class="field" type="email" name="Email" placeholder="Enter Email Address">
-        <input type="submit" value="Submit" id="btn">
+        <div class="pass-holder">
+            <input class="field password" type="password" name="Password" placeholder="Enter a password"><i class="fa-regular fa-eye-slash" id="visibility"></i>
+        </div>
+        <div class="pass-holder">
+            <input class="field password" type="password" name="confirmPassword" placeholder="Confirm password"><i class="fa-regular fa-eye-slash" id="visibility"></i>
+        </div>
+        
+        <input type="button" value="Submit" id="reg-btn" class="btn">
     </form>
+
+    
+
+    <script src="registration_page.js" type="module"></script>
 </body>
 </html>

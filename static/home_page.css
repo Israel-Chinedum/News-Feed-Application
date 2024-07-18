@@ -7,6 +7,7 @@
  font-family: var(--fontfamily);
  --background: rgb(26, 25, 25);
  --bkgTrans:  rgba(26, 25, 25, 0.575);
+ --textColor: rgb(192, 189, 189);
 }
 
 body{
@@ -53,7 +54,7 @@ body{
 }
 
 #navigations a:hover{
-  color: grey;
+  color: orangered;
 }
 
 #showcase-btn-container{
@@ -84,6 +85,8 @@ body{
 .news-post{
   width: 70vw;
   margin: auto;
+  margin-bottom: 200px;
+  margin-top: 100px;
 }
 
 #news-img{
@@ -103,3 +106,222 @@ body{
   margin: auto;
   width: 80%;
 }
+
+.reactions{
+  padding: 10px;
+  background-color: grey;
+  border-radius: 10rem;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reactions i{
+  color: black;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+.reactions i:hover{
+  color: white;
+  text-shadow: 2px 2px orangered;
+}
+
+#footer{
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(41, 40, 40);
+  border-top: 5px groove orangered;
+}
+
+#footer p{
+  margin: 10px;
+  font-size: 1.5rem;
+  color: grey;
+}
+
+#footer div{
+  width: 80%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10vh;
+}
+
+#footer div i{
+  font-size: 4rem;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.fa-brands{
+  color: grey;
+}
+
+#footer div i:hover{
+  box-shadow: 2px 2px 20px 2px black;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.fa-facebook:hover{
+  color: lightskyblue;
+  background-color: white;
+}
+
+.fa-whatsapp:hover{
+  color: green;
+  background-color: white;
+}
+
+.fa-instagram:hover{
+  color: purple;
+  background-color: white;
+}
+
+.fa-youtube:hover{
+  color: red;
+  background-color: white;
+}
+
+.fa-tiktok:hover{
+  color: white;
+  background-color: black;
+}
+
+.fa-telegram:hover{
+  color: white;
+  background-color: lightskyblue;
+}
+
+#comment-page{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#comment-section{
+  width: 50%;
+  height: 80%;
+  background-color: var(--background);
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 2px;
+  text-align: end;
+}
+
+.fa-close{
+  font-size: 2rem;
+  margin: 20px 20px 10px 10px;
+  color: var(--textColor);
+  font-weight: 2;
+  cursor: pointer;
+}
+
+.fa-close:hover{
+  color: orangered;
+}
+
+#comments{
+  width: 60%;
+  height: 70%;
+  margin: auto;
+  padding: 30px;
+  overflow-y: scroll;
+  color: var(--textColor);
+}
+
+#comments::-webkit-scrollbar{
+  background-color: transparent;
+  width: 10px;
+}
+
+#comments::-webkit-scrollbar-thumb{
+  background-color: orangered;
+  border-radius: 10px;
+}
+
+#comment{
+  margin-bottom: 50px;
+}
+
+#comm-info{
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.comm-info{
+  margin: 10px 10px 10px 0;
+}
+
+#comm-comment{
+  width: 70%;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+#comm-btn{
+  display: flex;
+  width: 200px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+#comm-btn input{
+  padding: 5px;
+  border-radius: 3px;
+  background-color: orangered;
+  color: white;
+  cursor: pointer;
+  margin: 10px 10px 10px 0;
+}
+
+#img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid orangered;
+}
+
+.add-comment{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.add-comment-tools{
+  margin: 10px;
+}
+
+#comment-box{
+  width: 500px;
+  height: 30px;
+  font-size: 1.1rem;
+  padding: 10px;
+  resize: none;
+  border-radius: 5px;
+  outline-color: orangered;
+}
+
+#add-comm{
+  padding: 10px;
+  width: 200px;
+  background-color: orangered;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+
