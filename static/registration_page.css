@@ -12,7 +12,7 @@ body{
 }
 
 body::before{
- content: 'fhjkl/';
+ content: '';
  background-image: url(./images/annie-spratt-hWJsOnaWTqs-unsplash.jpg);
  opacity: 0.3;
  width: 100vw;
@@ -26,7 +26,7 @@ body::before{
     width: 400px;
     display: flex;
     flex-direction: column;
-    z-index: 9999;
+    z-index: 1;
     box-shadow: 4px 4px 40px 4px black;
     padding: 20px;
     border-radius: 5px;
@@ -101,4 +101,62 @@ body::before{
     font-size: 1.1rem;
     background-color: transparent;
     outline: none;
+}
+
+
+
+
+
+
+
+
+
+/* ----------UPLOAD IMAGE PAGE CSS---------- */
+.container{
+    height: 100%;
+    width: 100%;
+}
+
+#uploadForm{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+    justify-content: space-evenly;
+}
+
+#img-container{
+    width: 300px;
+    height: 300px;
+    border: 2px groove orangered;
+    box-shadow: 4px 4px 40px 4px black;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#img{
+    width: inherit;
+    height: inherit;
+}
+
+
+#pic-file{
+    padding: 50px;
+    box-shadow: 4px 4px 40px 4px black;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    border: 2px groove orangered;
+    background-color: white;
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+#buttons input{
+    width: 200px;
+}
+
+#email{
+    display: none;
 }

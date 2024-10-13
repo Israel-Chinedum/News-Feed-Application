@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration_page.css">
+</head>
+<body>
+    <div class="container">
+        <p id="email"><%=Email%></p>
+        <form action="/uploadImg" enctype="multipart/form-data" method="post" id="uploadForm">
+
+            <div id="img-container">
+                <img src="" alt="" id="img">
+            </div>
+            <input name="file" type="file" id="pic-file">
+            <div id="buttons">
+                <input class="btn" id="file-btn" type="submit" value="Submit">
+                <input class="btn" type="button" id="skip-btn" value="Do it later">
+            </div>
+           
+        </form>
+    </div>
+    <script src="uploadImg.js"></script>
+</body>
+</html>

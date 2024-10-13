@@ -9,23 +9,26 @@
 </head>
 <body>
 
+    <%-include("./load")%>
+
    <p id="message">this is supposed to be a message</p>
 
     <form action="/register" method="post" id="form">
-        <input class="field" type="text" name="FirstName" placeholder="Enter FirstName">
-        <input class="field" type="text" name="LastName" placeholder="Enter LastName">
-        <input class="field" type="text" name="Department" placeholder="Enter Department">
-        <input class="field" type="number" name="Matric" placeholder="Enter Matric Number">
-        <input class="field" type="number" name="PhoneNumber" placeholder="Enter Phone Number">
-        <input class="field" type="email" name="Email" placeholder="Enter Email Address">
+        <input class="field" type="text" name="FirstName" placeholder="Enter FirstName" required>
+        <input class="field" type="text" name="LastName" placeholder="Enter LastName" required>
+        <input class="field" type="text" name="Department" placeholder="Enter Department" required>
+        <input class="field" type="number" name="Matric" placeholder="Enter Matric Number" required>
+        <input class="field" type="number" name="PhoneNumber" placeholder="Enter Phone Number" required>
+        <input class="field" type="email" name="Email" placeholder="Enter Email Address" required>
+        <input class="field" type="text" name="userName" placeholder="Enter User Name" required>
         <div class="pass-holder">
-            <input class="field password" type="password" name="Password" placeholder="Enter a password"><i class="fa-regular fa-eye-slash" id="visibility"></i>
+            <input class="field password" type="password" name="Password" placeholder="Enter a password" required><i class="fa-regular fa-eye-slash" id="visibility"></i>
         </div>
         <div class="pass-holder">
-            <input class="field password" type="password" name="confirmPassword" placeholder="Confirm password"><i class="fa-regular fa-eye-slash" id="visibility"></i>
+            <input class="field password" id="confirmPassword" type="password" placeholder="Confirm password" required><i class="fa-regular fa-eye-slash" id="visibility"></i>
         </div>
         
-        <input type="button" value="Submit" id="reg-btn" class="btn">
+        <input type="submit" value="Submit" id="reg-btn" class="btn">
     </form>
 
     

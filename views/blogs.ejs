@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="Font-Awesome-6.5.2/Font-Awesome-6.5.2/css/all.css">
+    <link rel="stylesheet" href="blogs.css">
+</head>
+<body>
+<div class="container">
+    <section id="header"> 
+        <header id="head">
+            <h1>Aministrator</h1>
+            <div class="search-bar">
+                <input type="text" id="search-input">
+                <i class="fa-solid fa-search"></i>
+            </div>
+           <i class="">Profile</i>
+        </header>
+        <nav id="blog-nav">
+            <ul>
+                <li class="blog" >School updates <i class="fa fa-circle"></i></li>
+                <li class="blog" >General Notice <i class="fa fa-circle"></i></li>
+                <li class="blog" >Departmental Notice <i class="fa fa-circle"></i></li>
+                <li class="blog" >Courses <i class="fa fa-circle"></i></li>
+                <li class="blog" >Broadcast <i class="fa fa-circle"></i></li>
+            </ul>
+                <div id="current"></div>
+        </nav>
+    </section>
+    <section id="content_section">
+        <iframe src="http://localhost:4000/school_updates" frameborder="0" id="content"></iframe>
+    </section>
+</div>
+<script src="blogs.js"></script>
+</body>
+</html>

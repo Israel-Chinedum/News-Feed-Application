@@ -1,7 +1,8 @@
-export const reg = (app) =>{
+export const reg = (app) => {
 
-    app.get('/registration', (req, res) =>{
-        res.render('registration_page');
-    });
-
-}
+    //----------registration route handler----------
+        app.get('/registration', (req, res) =>{
+            res.render('registration_page');
+        });
+    
+    }

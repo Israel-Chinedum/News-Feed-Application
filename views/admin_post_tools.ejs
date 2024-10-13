@@ -1,0 +1,281 @@
+<!-- ----------CSS--------- -->
+<style>
+
+    #post-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#post-box{
+    width: 80%;
+    height: 300px;
+    border-radius: 3px;
+    resize: none;
+    outline-color: orangered;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#post-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#post-buttons #post-btn{
+    padding: 10px;
+    border-radius: 3px;
+    background-color: orangered;
+    color: white;
+    width: 200px;
+}
+
+#post-buttons .fa-paperclip{
+    margin-left: 10px;
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    border-radius: 50%;
+}
+
+#tools{
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: grey;
+}
+
+#tools #text-size{
+    width: 30px;
+    outline: none;
+}
+
+#tools #text-color{
+    background-color: transparent;
+    border-radius: 50%;
+    height: 40px;
+}
+
+#position-text{
+    color: transparent;
+    padding: 5px;
+    background-color: orangered;
+    -webkit-text-stroke: 0.5px white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+#position{
+    position: absolute;
+    background-color: grey;
+    width: 500px;
+    z-index: 1;
+    padding: 10px;
+    display: none;
+    margin-top: -50px;
+}
+
+#position ul{
+    display: flex;
+    list-style: none;
+    list-style: none;
+    width: 100%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+#position li:hover{
+    color: darkorange;
+}
+
+#view-post{
+    width: 38vw;
+    height: 500px;
+    border: 1px solid orangered;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    margin-left: 60vw;
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+#file-div{
+    width: 100%;
+    height: max-content;
+    background-color: black;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+#text-paragraph{
+    width: 100%;
+}
+
+#file-div img{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#file-div video{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+#close-edit-btn{
+    font-size: 1.5rem;
+    margin: 10px;
+    background-color: orangered;
+    color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#close-edit-btn:hover{
+    color: red;
+    background-color: grey;
+}
+
+#stuff{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    /* background-color: rgba(26, 25, 25, 0.719); */
+    margin-bottom: 10px;
+}
+
+
+</style>
+
+
+
+
+
+<!-- ----------HTML---------- -->
+
+<div id="view-post">
+
+  <div id="stuff">
+        <input type="button" id="close-edit-btn" value="X">
+    </div>
+
+    <div id="file-div">
+        <img src="" alt="">
+        <video src="" controls></video>
+    </div>
+    <p id="text-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quidem, aut corrupti laudantium in vel ratione dignissimos esse magni consectetur, perferendis autem similique quis iure iste. Obcaecati cum rem excepturi nisi vel ipsum iure veritatis voluptatibus esse, iusto iste dicta temporibus nemo accusamus totam necessitatibus consequatur ea dolorem quos voluptates maiores reprehenderit. Non optio ratione excepturi cupiditate, iure nostrum rem corrupti voluptatum ex fugit beatae mollitia repudiandae, sunt cum nisi doloremque hic, sed quis! Perspiciatis maxime quaerat quos nisi esse aut aspernatur, blanditiis eum pariatur odio aliquam expedita sed quia labore, a nihil nemo quibusdam delectus quam harum sit doloremque corporis. Magnam amet officiis suscipit. Veniam sunt neque magnam laudantium sint autem, est quos, hic exercitationem atque totam dolores quia ipsam iusto earum a sit animi aliquam quaerat debitis! Eveniet qui corporis dolor reiciendis cupiditate eius voluptate expedita, odio, harum officiis amet iste minus soluta molestiae aut. Quibusdam ullam alias, autem nemo impedit, debitis voluptatum quidem animi expedita iure necessitatibus aperiam voluptatibus nulla delectus, sint quam nihil repellat eum ad saepe! Nisi ipsum quam recusandae optio animi aliquid voluptatibus fuga cum voluptates consequatur esse quae odio, aut perspiciatis eos quibusdam omnis. Fuga, animi officiis odit cum quo perspiciatis deleniti molestiae sapiente repellat tenetur, delectus cupiditate beatae natus veritatis! Expedita pariatur quisquam corrupti. Labore iusto facilis tenetur vitae, ad velit omnis voluptates inventore? Autem eius magnam nostrum tenetur consequatur reiciendis ratione obcaecati hic totam sit tempore, impedit quos soluta commodi nobis animi at expedita voluptatem quasi aut saepe pariatur. Minus veniam, ipsam assumenda error praesentium voluptates saepe temporibus est, suscipit alias doloremque! Sequi atque reiciendis magni voluptatem, quae adipisci accusamus error obcaecati cupiditate perferendis, corporis qui id numquam deserunt nam ut iusto enim mollitia odit architecto iure repellendus dolore itaque? Sapiente minus voluptate aperiam tempora aliquam cupiditate assumenda expedita praesentium voluptates adipisci odit qui nostrum placeat, optio animi perspiciatis eius soluta voluptatem incidunt eveniet? Dolore magni consequuntur officiis nobis itaque suscipit? Assumenda praesentium, voluptates officiis dolores enim eveniet libero ducimus reiciendis impedit quaerat eaque ipsam alias earum, tempore corporis architecto sint! Ut dolorum a quidem possimus suscipit neque facere inventore voluptatem, ipsum harum aut veniam reprehenderit non enim! Incidunt odio non culpa expedita. Commodi odit laboriosam nulla facere, reprehenderit molestiae quis nemo soluta, provident minima voluptas eum id perspiciatis perferendis fugiat voluptate cum? Quo porro, cum, unde harum adipisci quasi error atque, dolorem ipsa aut illum qui tempora facilis ratione tempore sapiente pariatur autem! Facilis nisi, illo itaque, inventore cum dolorum provident dolorem earum rem odio fugiat fuga placeat beatae delectus, similique omnis unde! Voluptatum quo placeat quaerat hic tempore harum ad dolores vero deleniti. Hic ipsa aliquid dolorum illum nesciunt similique vel quos totam quas dolorem sit error nisi molestiae, corrupti excepturi odit at sequi aspernatur! Debitis, dolorem dicta. Maxime modi voluptatibus, in nobis facere explicabo hic sit consequatur sequi dolorem repudiandae animi ab repellendus minus quae eligendi soluta numquam doloribus odio! Rem temporibus quas minima labore, tenetur iure. Velit assumenda eligendi et. Voluptatibus laudantium eum ullam! Obcaecati, autem aliquid.
+    </p>
+
+</div>
+
+<div id="post-container">
+    <div id="position">
+        <ul>
+            <li>Start</li>
+            <li>End</li>
+            <li>Top</li>
+            <li>Bottom</li>
+            <li>H-Center</li>
+            <li>V-Center</li>
+            <li>Justify</li>
+        </ul>
+    </div>
+    <div id="tools">
+      <input type="color" id="bkg-color">
+      <input type="color" id="text-color">
+      <input type="number" min="1" max="5" onkeydown="return false" id="text-size">
+      <i class="fa-solid fa-arrows-up-down-left-right" id="position-text"></i>
+    </div>
+    <textarea name="postBox" id="post-box"></textarea>
+    <div id="post-buttons">
+      <button id="post-btn">Edit</button>
+      <i class="fa fa-paperclip"></i>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ----------JAVA SCRIPT---------- -->
+  <script>
+    // ----------STORING DOM ELEMENTS IN VARRIABLES----------
+    const posText = document.querySelector('#position-text');
+    const pos = document.querySelector('#position');
+    const bgColor = document.querySelector('#bkg-color');
+    const viewPost = document.querySelector('#view-post');
+    const sfBtn = document.querySelector('.fa-paperclip');
+    const profileImg = document.querySelector('#profile-img');
+    const fileDiv = document.querySelector('#file-div');
+    const img = document.querySelector('#file-div img');
+    const video = document.querySelector('#file-div video');
+
+
+
+
+
+    // ----------TEXT POSITIONING BUTTON---------- 
+    posText.addEventListener('click', () => {
+       
+        if(pos.classList.contains('showing')){
+            pos.classList.remove('showing');
+            pos.style.display = 'none'; 
+        } else{
+            pos.classList.add('showing');
+            pos.style.display = 'block';
+        }
+        
+    });
+
+
+
+
+
+    // ----------BACKGROUND COLOR BUTTON----------
+    bgColor.addEventListener('change', () => {
+        console.log(bgColor.value);
+        viewPost.style.backgroundColor =  `${bgColor.value}`;
+    });
+
+
+
+
+    sfBtn.addEventListener('click', async () => {
+        try{
+            const fileHandle = await window.showOpenFilePicker()
+            const file = await fileHandle[0].getFile()
+            console.log(file);
+
+            if(file.type == 'image/jpeg' || file.type == 'image/png'){
+                video.src = '';
+                video.style.display = 'none';
+                img.style.display = 'block';
+                img.src = URL.createObjectURL(file);
+            }
+
+            if(file.type == 'video/mp4' || file.type == 'video/webm'){
+                img.src = '';
+                img.style.display = 'none'
+                video.style.display = 'block';
+                video.src = URL.createObjectURL(file);
+            }
+
+            const url = URL.createObjectURL(file);
+            profileImg.src = url;
+        } catch(err){
+            console.log(err);
+        }
+    })
+
+  </script>

@@ -1,7 +1,14 @@
+// WEBSOCKET (SOCKET IO)
+const socket = io();
 
+socket.on('server', () => {
+    console.log('I have recieved the servers message.')
+})
+
+//REST OF THE CODE!
 const right = document.querySelector('#right');
 const left = document.querySelector('#left');
-const headerShowCase = document.querySelector('.header-showcase');
+const headerShowCase = document.querySelector('#header-showcase');
 let imgList = [];
 let i = 0;
 let interval = 5000;
@@ -57,4 +64,7 @@ left.addEventListener('click', ()=>{
     clearInterval(runSlide);
     eng.slide('backward');
     runSlide = setInterval("eng.slide('forward')", 5000);
-})
+});
+
+
+

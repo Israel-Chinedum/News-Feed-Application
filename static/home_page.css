@@ -30,11 +30,19 @@ body{
 
 
 
-.header-showcase{
+
+
+
+
+
+
+
+/* -----HEADER SHOWCASE SECTION----- */
+#header-showcase{
   transition: 1s;
   width: 100%;
   height: 60vh;
-  background-image: url(./images/james-adams-DC9z-Xau6j0-unsplash.jpg);
+  background-image: url(./images/kenny-eliason-Pfa7Soh0euw-unsplash.jpg);
   background-position: center;
   background-size: cover;
   border-bottom: 1px solid orangered;
@@ -98,52 +106,98 @@ body{
   background-color: transparent;
 }
 
-.news-post{
-  width: 70vw;
-  margin: auto;
-  margin-bottom: 200px;
-  margin-top: 100px;
-}
 
-#news-img{
-  width: 80%;
-  height: 400px;
-  background-image: url(images/austin-distel-Hg3BHX6U5jg-unsplash.jpg);
-  background-position: center;
-  background-size: cover;
-  margin: auto;
-  margin-bottom: 20px;
-}
 
-.paragraph{
-  text-align: justify;
-  color: rgb(192, 189, 189);
-  padding: 10px;
-  margin: auto;
-  width: 80%;
-}
 
-.reactions{
-  padding: 10px;
-  background-color: grey;
-  border-radius: 10rem;
-  width: 80%;
+
+
+
+
+
+
+/* -----COURSE PREVIEW SECTION----- */
+#course-preview{
+  width: 90%;
   margin: auto;
   display: flex;
-  justify-content: space-around;
-}
-
-.reactions i{
-  color: black;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-
-.reactions i:hover{
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   color: white;
-  text-shadow: 2px 2px orangered;
 }
 
+#part-regular{
+  margin: 20px;
+}
+
+#part-regular button{
+  padding: 10px;
+  font-size: 1.1rem;
+  width: 100px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+#part-regular button:hover{
+  color: orangered;
+}
+
+#part-regular #regular{
+  border-bottom: 2px solid orangered;
+  color: orangered;
+}
+
+.courses{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses .course{
+  width: 350px;
+  /* border: 1px solid grey; */
+  height: 300px;
+  margin: 20px;
+  display: grid;
+  grid-template-rows: 90% 10%;
+  text-align: center;
+}
+
+.img-div img{
+  width: 100%;
+  height: 100%;
+}
+
+.courses div p{
+  margin-top: 10px;
+}
+
+#more-btn{
+  width: 150px;
+  padding: 10px;
+  background-color: orangered;
+  color: white;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----FOOTER SECTION----- */
 #footer{
   height: 40vh;
   width: 100vw;
@@ -216,128 +270,3 @@ body{
   color: white;
   background-color: lightskyblue;
 }
-
-#comment-page{
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: none;
-}
-
-#comment-section{
-  width: 50%;
-  height: 80%;
-  background-color: var(--background);
-  border-radius: 10px;
-  box-shadow: 2px 2px 20px 2px;
-  text-align: end;
-}
-
-.fa-close{
-  font-size: 2rem;
-  margin: 20px 20px 10px 10px;
-  color: var(--textColor);
-  font-weight: 2;
-  cursor: pointer;
-}
-
-.fa-close:hover{
-  color: orangered;
-}
-
-#comments{
-  width: 60%;
-  height: 70%;
-  margin: auto;
-  padding: 30px;
-  overflow-y: scroll;
-  color: var(--textColor);
-}
-
-#comments::-webkit-scrollbar{
-  background-color: transparent;
-  width: 10px;
-}
-
-#comments::-webkit-scrollbar-thumb{
-  background-color: orangered;
-  border-radius: 10px;
-}
-
-#comment{
-  margin-bottom: 50px;
-}
-
-#comm-info{
-  display: flex;
-  align-items: center;
-  width: 200px;
-}
-
-.comm-info{
-  margin: 10px 10px 10px 0;
-}
-
-#comm-comment{
-  width: 70%;
-  text-align: justify;
-  margin-top: 10px;
-}
-
-#comm-btn{
-  display: flex;
-  width: 200px;
-  align-items: center;
-  margin-top: 10px;
-}
-
-#comm-btn input{
-  padding: 5px;
-  border-radius: 3px;
-  background-color: orangered;
-  color: white;
-  cursor: pointer;
-  margin: 10px 10px 10px 0;
-}
-
-#img{
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 1px solid orangered;
-}
-
-.add-comment{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.add-comment-tools{
-  margin: 10px;
-}
-
-#comment-box{
-  width: 500px;
-  height: 30px;
-  font-size: 1.1rem;
-  padding: 10px;
-  resize: none;
-  border-radius: 5px;
-  outline-color: orangered;
-}
-
-#add-comm{
-  padding: 10px;
-  width: 200px;
-  background-color: orangered;
-  color: white;
-  font-size: 1.1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-
